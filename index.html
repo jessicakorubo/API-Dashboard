@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+   
+</head>
+<body>
+    <div class="dash-header">
+        <div class="logo">
+            <img src="images/TestLogo.svg" alt="">
+        </div>
+
+        <div class="menu">
+
+            <div class="overview menu_option">
+                <img src="images/overview.svg" alt="">
+                <p>Overview</p>
+            </div>
+
+            <div class="patients menu_option">
+                <img src="images/patients.svg" alt="">
+                <p>Patients</p>
+            </div>
+
+            <div class="schedule menu_option">
+                <img src="images/schedule2.svg" alt="">
+                <p>Schedule</p>
+            </div>
+
+            <div class="message menu_option">
+                <img src="images/message.svg" alt="">
+                <p>Message</p>
+            </div>
+
+            <div class="transactions menu_option">
+                <img src="images/transactions.svg" alt="">
+                <p>Transactions</p>
+            </div>
+        </div>
+        <div class="profile_set">
+            <div class="profile">
+                <img src="images/jose_simons_small.png" alt="">
+                <div class="details">
+                    <p class="name"> Dr. Jose Simons</p>
+                    <p class="name"> <b>General Practitioner</b></p>
+                </div>
+            </div>
+            <hr>
+            <div class="settings">
+                <img id="settings_btn" src="images/settings.svg" alt="">
+                <img id="more_menu_btn" src="images/more_menu.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="dash-body">
+        <div class="patients">
+            <div class="patient-table-head">
+                <b>Patients</b>
+                <img src="images/search.svg" alt="">
+
+                
+            </div>
+            <div>
+                <div class="patients_names">
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Emily Williams</p>
+                                <p class="gender_age">Female, 18</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/ryan_johnson.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Ryan Johnson</p>
+                                <p class="gender_age">Male, 45</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/brandon_mitchell.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Brandon Mitchell</p>
+                                <p class="gender_age">Male, 35</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/jessica_taylor.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Jessica Taylor</p>
+                                <p class="gender_age">Female, 18</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Samantha Johnson</p>
+                                <p class="gender_age">Female, 56</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Ashley Martinez</p>
+                                <p class="gender_age">Female, 54</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Emily Williams</p>
+                                <p class="gender_age">Female, 18</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Olivia Brown</p>
+                                <p class="gender_age">Female, 32</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Tyler Davis</p>
+                                <p class="gender_age">Female, 19</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Kevin Anderson</p>
+                                <p class="gender_age">Female, 18</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Dylan Thompson</p>
+                                <p class="gender_age">Male, 35</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Mike Nolan</p>
+                                <p class="gender_age">Male, 35</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patient_info">
+                            <div>
+                                <img src="images/emily.png" alt="">
+                            </div>
+                            <div class="patient_info_det">
+                                <p class="patients_name">Dylan Thompson</p>
+                                <p class="gender_age">Male, 35</p>
+                            </div>
+                        </div>
+                        <div class="more_patient_info">
+                            <img src="images/more_patients_info.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="diagnosis_hist">
+         
+           
+           <div class="first-section">
+            <h3>Diagnosis History</h3>
+            <div class="chart"> 
+                <p class="bp">Blood Pressure</p>
+            
+                <canvas id="myChart">
+                   
+                </canvas>
+            </div>
+            <div class="vitals">
+
+                <div class="resp_rate vitals_det">
+                    <div>
+                        <img src="images/respiratory rate.svg" alt="">
+                        <p>Respiratory Rate</p>
+                        <p class="vitals_spec" id="resp"></p>
+                        <p id="resp_level"></p>
+                    </div>
+                </div>
+
+                <div class="temp vitals_det">
+                    <div>
+                        <img src="images/temperature.svg" alt="">
+                        <p>Temperature</p>
+                        <p class="vitals_spec" id="temp"></p>
+                        <p id="temp_level"></p>
+                    </div>
+                </div>
+
+                <div class="heart_rate vitals_det">
+                    <div>
+                        <img src="images/HeartBPM.svg" alt="">
+                        <p>Heart Rate</p>
+                        <p  class="vitals_spec" id="heart"></p>
+                        <p id="heart_level"></p>
+                    </div>
+                </div>
+            </div>
+           </div>
+           
+            <div class="diagnostic_list">
+                <div class="list_table">
+                    <h3>Diagnostic List</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Problem/Diagnosis</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="patient_info_profile">
+
+            <div class="patient_profile">
+
+                <div class="patient_rep">
+                    <img id="patient_profile_picture" src="" alt="">
+                    <p id="patient_name"><b></b></p>
+                </div>
+                <div class="patient_details">
+                    <div class="detail">
+                        <img src="images/dob.svg" alt="">
+                        <div class="dob det-info">
+                            <p>Date of Birth</p>
+                            <p id="dob"><b></b></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="images/FemaleIcon.svg" alt="">
+                        <div class="gender det-info">
+                            <p>Gender</p>
+                            <p id="gender"></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="images/PhoneIcon.svg" alt="">
+                        <div class="con det-info">
+                            <p>Contact Info</p>
+                            <p id="contact"><b></b></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="images/PhoneIcon.svg" alt="">
+                        <div class="eme det-info">
+                            <p>Emergency Contact</p>
+                            <p id="eme"><b></b></p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="images/InsuranceIcon.svg" alt="">
+                        <div class="ins det-info">
+                            <p>Insurance Provider</p>
+                            <p id="ins"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_information">
+                    <a href="#">Show All Information</a>
+                </div>
+                
+                
+            </div>
+
+            <div class="detail_download">
+                <h3>Lab Results</h3>
+                <div class="dowload_results">
+                    <div class="blood load">
+                        <p>Blood Tests</p>
+                        <img src="images/download.svg" alt="">
+                    </div>
+                    <div class="ct load">
+                        <p>CT Scans</p>
+                        <img src="images/download.svg" alt="">
+                    </div>
+                    <div class="radio load">
+                        <p>Radiology Reports</p>
+                        <img src="images/download.svg" alt="">
+                    </div>
+                    <div class="x-ray load">
+                        <p>X-Rays</p>
+                        <img src="images/download.svg" alt="">
+                    </div>
+                    <div class="urine load">
+                        <p>Urine Tests</p>
+                        <img src="images/download.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+       
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+    integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="api.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    font-family: Poppins;
+    padding: 0 20px;
+    color: #072635;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 70px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    background: #fff;
+    height:60px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.menu_option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_option p {
+    margin-left: 9px;
+}
+
+.profile_set {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 12px;
+    justify-content: space-between;
+
+}
+.profile_set hr {
+    height: 100%;
+    /* margin: 0 10px; */
+}
+.profile {
+    display: flex;
+
+}
+.profile img {
+    margin-right: 15px;
+}
+.settings #settings_btn {
+    margin-right: 5px;
+}
+.dash-body {
+    display:flex;
+    gap: 25px;
+    margin-top: 20px;
+    /* padding: 0 20px; */
+    
+}
+.first-section{
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+.dash-body .patients {
+    width: 20%;
+}
+.patients .patient-table-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dash-body .diagnosis_hist {
+    width: 60%;
+}
+.patient_info_profile {
+    width: 20%;
+}
+.dash-body .patient_profile {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 30px;
+    height: max-content;
+}
+
+.detail_download {
+    margin-top: 4rem;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    height: max-content;
+
+}
+.load {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.load:hover {
+    background-color: #E0F3FA;
+}
+.patient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 40px;
+}
+.patient_info{
+    display: flex;
+    align-items: center;
+}
+.patient_info_det {
+    margin-left : 15px;
+}
+
+/* CHART  */
+.chart {
+    width: 100%;
+    background-color: #F4F0FE;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+/* PATIENT INFO */
+.patient_rep {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.patient_rep img {
+    width: 150px;
+    height: 150px;
+}
+.patient_details {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+.detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.det-info {
+    margin-left: 10px;
+}
+.det-info >p:nth-child(2) {
+    font-weight: bold;
+}
+
+.show_information a{
+    background-color: rgba(1, 240, 208, 1);
+    border-radius: 20px;
+    padding: 10px 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.show_information {
+    margin-top: 50px;
+    text-align: center;
+}
+.bp {
+    padding-left:15px;
+    padding-top:15px;
+    font-weight: bold;
+    color:#072635;
+}
+
+
+/* VITALS */
+.vitals {
+    width: 100%;
+    margin-top:30px;
+    display: flex;
+    gap: 1rem;
+}
+
+.vitals_det {
+    width: calc(100%/3);
+    height: 250px;
+    border-radius: 10px;
+}
+.vitals_det>div {
+    padding: 20px;
+}
+
+.resp_rate{
+    background-color: #E0F3FA;
+}
+
+.temp {
+    background-color: #FFE6E9;
+}
+
+.heart_rate{
+    background-color: #FFE6F1;
+}
+
+.vitals_spec {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.diagnostic_list {
+    background-color: white;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+/* TABLE */
+.list_table h3{
+    margin-bottom: 2rem;
+}
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead {
+    /* padding:30px 0; */
+    background-color: #F6F7F8;
+}
+table th {
+    padding: 12px;
+}
+table thead th:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+table thead th:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+tbody td {
+   padding: 15px;
+}
